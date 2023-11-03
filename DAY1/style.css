@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-image: url(https://img.freepik.com/free-vector/abstract-background-design_1107-155.jpg?size=626&ext=jpg&ga=GA1.1.1837199458.1698983510&semt=ais);
+}
+
+b {
+  color: rgb(187, 82, 44);
+}
+
+#Terminal {
+  width: 50%;
+  height: 60%;
+  background-color: rgba(26, 26, 26, 0.678);
+  border-radius: 5px;
+  font-family: "IBM Plex Mono", monospace;
+  box-shadow: 15px 15px 10px rgba(54, 51, 51, 0.685);
+}
+
+#Terminal-header {
+  width: 100%;
+  height: 8%;
+  color: rgb(199, 199, 199);
+  background-color: rgba(87, 87, 87, 0.733);
+  border-radius: 5px 5px 0px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#Terminal-body {
+  width: 100%;
+  height: 93%;
+  border-radius: 0px 0px 5px 5px;
+  color: rgb(238, 236, 236);
+}
+
+#Terminal-body p {
+  font-size: 1em;
+  padding: 5px;
+}
+
+#Terminal-header div {
+  width: 33%;
+  display: flex;
+}
+
+#header-titulo {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+#header-icons {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-left: 5px;
+}
+
+.icon {
+  width: 15px !important;
+  height: 15px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.red {
+  background-color: rgb(226, 59, 59);
+  transition: all linear 0.5s;
+}
+
+.green {
+  background-color: rgb(56, 207, 56);
+  transition: all linear 0.5s;
+}
+
+.yellow {
+  background-color: rgb(190, 190, 25);
+  transition: all linear 0.5s;
+}
+
+.red:hover {
+  background-color: rgb(255, 0, 0);
+  cursor: pointer;
+}
+
+.green:hover {
+  background-color: rgb(5, 243, 5);
+  cursor: pointer;
+}
+
+.yellow:hover {
+  background-color: rgb(255, 255, 0);
+  cursor: pointer;
+}
+
+#Java {
+  padding: 5px;
+  display: block;
+  white-space: nowrap;
+  border-right: 2px solid;
+  width: 34ch;
+
+  animation: typing 2.5s steps(34), blink 0.5s infinite step-end alternate;
+  overflow: hidden;
+}
+
+#JS {
+  padding: 5px;
+  display: block;
+  white-space: nowrap;
+  border-right: 2px solid;
+  width: 27ch;
+
+  animation: typing 2.5s steps(27), blink 0.5s infinite step-end alternate;
+  overflow: hidden;
+}
+
+#C {
+  padding: 5px;
+  display: block;
+  white-space: nowrap;
+  border-right: 2px solid;
+  width: 22ch;
+
+  animation: typing 2.5s steps(22), blink 0.5s infinite step-end alternate;
+  overflow: hidden;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
