@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+
+<Pane fx:id="conversorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="256.0" prefWidth="471.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.angelmz.conversiones.HelloController">
+   <children>
+      <Button fx:id="btn_convertir" layoutX="275.0" layoutY="209.0" mnemonicParsing="false" onAction="#onButtonClick" styleClass="button-styled" stylesheets="@styles.css" text="Convertir" />
+      <TextField fx:id="div2" layoutX="275.0" layoutY="140.0" prefHeight="32.0" prefWidth="143.0" styleClass="text-field-styled" />
+      <TextField fx:id="div1" layoutX="275.0" layoutY="76.0" prefHeight="32.0" prefWidth="143.0" styleClass="text-field-styled" />
+      <ComboBox fx:id="cbox_div1" layoutX="54.0" layoutY="76.0" onShowing="#listarDivisas" prefWidth="150.0" styleClass="combo-box-styled" />
+      <ComboBox fx:id="cbox_div2" layoutX="54.0" layoutY="140.0" prefWidth="150.0" styleClass="combo-box-styled" />
+      <Label layoutX="172.0" layoutY="28.0" styleClass="label-styled" text="Conversor de divisas">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_Limpiar" layoutX="118.0" layoutY="209.0" mnemonicParsing="false" onAction="#onLimpiar" styleClass="button-styled" text="Limpiar" />
+   </children>
+</Pane>
